@@ -25,23 +25,26 @@ This project is a Network Intrusion Detection System (NIDS) that uses machine le
 ## Installation
 
 1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/SudoAnirudh/Intrusion-Detection-System-Using-ML.git
-    cd Intrusion-Detection-System-Using-ML
-    ```
+
+   ```sh
+   git clone https://github.com/SudoAnirudh/Intrusion-Detection-System-Using-ML.git
+   cd Intrusion-Detection-System-Using-ML
+   ```
 
 2. **Create a virtual environment (optional but recommended):**
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
 3. **Install the required packages:**
-    ```sh
-    pip install -r requirements.txt
-    ```
 
-    *Note: Ensure you have `scikit-learn==0.22.1` installed as the model was pickled with this version.*
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+   _Note: Ensure you have `scikit-learn==0.22.1` installed as the model was pickled with this version._
 
 ## Usage
 
@@ -49,15 +52,17 @@ This project is a Network Intrusion Detection System (NIDS) that uses machine le
    Open `app.py` and update the `EMAIL_ADDRESS` and `EMAIL_PASSWORD` variables if you want to enable email alerts. You will also need to update the recipient list in the `predict` and `results` functions.
 
 2. **Run the Flask application:**
-    ```sh
-    python app.py
-    ```
+
+   ```sh
+   python app.py
+   ```
 
 3. **Access the Web Interface:**
-    Open your web browser and go to `http://127.0.0.1:5000/`.
-    - Click on "Launch" or navigate to `/ids` to access the detection form.
-    - Fill in the network parameters (e.g., connection count, service rates).
-    - Click "Predict" to see if the traffic is Normal or an Attack.
+   Open your web browser and go to `http://127.0.0.1:5000/`.
+
+   - Click on "Launch" or navigate to `/ids` to access the detection form.
+   - Fill in the network parameters (e.g., connection count, service rates).
+   - Click "Predict" to see if the traffic is Normal or an Attack.
 
 4. **API Usage:**
    You can send a POST request to `http://127.0.0.1:5000/results` with a JSON body containing the feature values.
@@ -65,6 +70,7 @@ This project is a Network Intrusion Detection System (NIDS) that uses machine le
 ## Model Information
 
 The model attempts to classify traffic into the following categories:
+
 - **Normal**: Normal network traffic.
 - **DOS**: Denial of Service attack.
 - **PROBE**: Probing or surveillance activity.
@@ -81,4 +87,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgements
 
-Thanks to [vicky60629](https://github.com/vicky60629/Network-Intrusion-Detection-System) for the base of this project.
+This Network Intrusion Detection System is maintained and engineered by Moksh Jain.
+
+---
+
+For questions or collaboration, contact me at [mokshjaindev@gmail.com](mailto:mokshjaindev@gmail.com).
+
+Copyright (c) 2026 Moksh Jain
