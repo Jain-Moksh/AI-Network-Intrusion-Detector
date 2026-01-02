@@ -27,7 +27,7 @@ This project is a Network Intrusion Detection System (NIDS) that uses machine le
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/SudoAnirudh/Intrusion-Detection-System-Using-ML.git
+   git clone https://github.com/Jain-Moksh/AI-Network-Intrusion-Detector.git
    cd Intrusion-Detection-System-Using-ML
    ```
 
